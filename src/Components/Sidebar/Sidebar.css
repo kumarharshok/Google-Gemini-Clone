@@ -1,0 +1,146 @@
+.sidebar{
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 25px 15px;
+
+}
+.sidebar img{
+    width: 20px;
+
+}
+.sidebar .menu{
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.sidebar .new-chat{
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+}
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+    max-height: 435px;
+    overflow-y: auto;  
+}
+.sidebar .recent-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.sidebar .recent-entry{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+.sidebar .recent-entry:hover{
+    background-color: #e2e6eb;
+}
+
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.search-input {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+    border-color: #4b90ff;
+    box-shadow: 0 2px 8px rgba(75, 144, 255, 0.2);
+}
+  
+/* Add this to your Sidebar.css */
+
+.help-info {
+    position: absolute; /* Position it absolutely within the sidebar */
+    bottom: 20px; /* Adjust the position from the bottom */
+    left: 20px; /* Adjust the position from the left */
+    width: 214px; /* Set a fixed width for the container */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+    z-index: 100; /* Ensure it appears above other elements */
+    font-size: xx-small;
+}
+
+.help-info p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.help-info a {
+    color: #4b90ff;
+    text-decoration: none;
+}
+
+.help-info a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    position: relative; /* Ensure the sidebar is the reference point for absolute positioning */
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .sidebar{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }

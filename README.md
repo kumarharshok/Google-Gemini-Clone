@@ -22,3 +22,4 @@ API calls to an AI service (you can specify which API you are using, e.g., Gemin
 Custom icons are used to enhance the UI.
 
 # App-Link
+https://google-gemini-clone-tan.vercel.app/
